@@ -63,6 +63,7 @@ jobs:
                       "instance_prompt": "a photo of a ${{ inputs.prompt-identifier }} person",
                       "class_prompt": "a photo of a person",
                       "instance_data": "${{ steps.upload-training-data.outputs.INSTANCE_DATA_URL }}",
+                      "train_text_encoder" : true,
                       "max_train_steps": ${{ inputs.max-train-steps }}
                   },
                   "model": "${{ inputs.model-name }}",
